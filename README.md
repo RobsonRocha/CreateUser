@@ -5,7 +5,7 @@
 Projeto criado para dar suporte a aplicação principal OLX_SAC.
 Constitui uma aplicação para cadastrar usuários que podem acessar o sistema acima mencionado.
 Os usuários podem ser administradores do sistema ou não.
-Os administradores tem acesso total vendo tudo o que foi cadastrado por todos outros usuários e os não-administradores vêem somente o que eles próprios cadastraram.
+Os administradores têm acesso total, vendo tudo o que foi cadastrado por todos outros usuários e os não-administradores vêem somente o que eles próprios cadastraram.
 
 ## Linguagem
 
