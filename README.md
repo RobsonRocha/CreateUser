@@ -20,11 +20,12 @@ Na pasta target serão gerados vários arquivos, mas o arquivo completo sempre é g
 
 ## Execução
 
-Para executar o programa basta digitar na linha de comando java -cp caminhoOndeEstaOArquivo/CreateUserOLX_SAC-1.0.0-SNAPSHOT-jar-with-dependencies.jar main.CreateUser login.
+Para executar o programa basta digitar na linha de comando java -cp caminhoOndeEstahOArquivo/CreateUserOLX_SAC-1.0.0-SNAPSHOT-jar-with-dependencies.jar main.CreateUser [login].
 Onde login é o login do usuário a ser inserido no banco.
 Depois disso será perguntada a senha e se o usuário é administrador ou não.
 
 
 ## Banco de dados
 
+O banco de dados usado foi o PostgreSQL.
 A criação do banco está no arquivo CREATEDB.
