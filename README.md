@@ -1,31 +1,36 @@
 ## CreateUser
 
-## MotivaÁ„o
+## Motiva√ß√£o
 
-Projeto criado para dar suporte a aplicaÁ„o principal OLX_SAC.
-Constitui uma aplicaÁ„o para cadastrar usu·rios que podem acessar o sistema acima mencionado.
-Os usu·rios podem ser administradores do sistema ou n„o.
-Os administradores tÍm acesso total, vendo tudo o que foi cadastrado por todos outros usu·rios e os n„o-administradores vÍem somente o que eles prÛprios cadastraram.
+Projeto criado para dar suporte a aplica√ß√£o principal [OLX_SAC](https://github.com/RobsonRocha/OLX_SAC).
+Constitui uma aplica√ß√£o para cadastrar usu√°rios que podem acessar o sistema acima mencionado.
+Os usu√°rios podem ser administradores do sistema ou n√£o.
+Os administradores t√™m acesso total, vendo tudo o que foi cadastrado por todos outros usu√°rios e os n√£o-administradores v√™em somente o que eles pr√≥prios cadastraram.
 
 ## Linguagem
 
-A linguagem utilizada È Java e o execut·vel est· em um arquivo .jar, este j· contÈm todas as bibliotecas necess·rias.
-
-## CompilaÁ„o
-
-Para facilitar a importaÁ„o de bibliotecas e a compilaÁ„o dos arquivos em um ˙nico pacote, foi utilizado Maven.
-Para compilar gerando o pacote completo basta executar o comando mvn assembly:assembly na linha de comando.
-Na pasta target ser„o gerados v·rios arquivos, mas o arquivo completo sempre È gerado com o nome CreateUserOLX_SAC-1.0.0-SNAPSHOT-jar-with-dependencies.jar
-
-
-## ExecuÁ„o
-
-Para executar o programa basta digitar na linha de comando java -cp caminhoOndeEstahOArquivo/CreateUserOLX_SAC-1.0.0-SNAPSHOT-jar-with-dependencies.jar main.CreateUser [login].
-Onde login È o login do usu·rio a ser inserido no banco.
-Depois disso ser· perguntada a senha e se o usu·rio È administrador ou n„o.
-
+A linguagem utilizada √© Java e o execut√°vel est√° em um arquivo .jar, este j√° cont√©m todas as bibliotecas necess√°rias.
 
 ## Banco de dados
 
 O banco de dados usado foi o PostgreSQL.
-A criaÁ„o do banco est· no arquivo CREATEDB.
+A cria√ß√£o do banco est√° no arquivo CREATEDB.
+
+## Compila√ß√£o
+
+Para facilitar a importa√ß√£o de bibliotecas e a compila√ß√£o dos arquivos em um √∫nico pacote, foi utilizado [Maven](https://maven.apache.org/).
+Para compilar gerando o pacote completo basta executar o comando abaixo na linha e comando.
+
+```mvn assembly:assembly```
+
+Na pasta target ser√£o gerados v√°rios arquivos, mas o arquivo completo sempre √© gerado com o nome `CreateUserOLX_SAC-1.0.0-SNAPSHOT-jar-with-dependencies.jar`
+
+
+## Execu√ß√£o
+
+Para executar o programa basta digitar na linha de comando 
+
+```java -cp caminhoOndeEstahOArquivo/CreateUserOLX_SAC-1.0.0-SNAPSHOT-jar-with-dependencies.jar main.CreateUser [login] ```
+
+Onde login √© o login do usu√°rio a ser inserido no banco.
+Depois disso ser√° perguntada a senha e se o usu√°rio √© administrador ou n√£o.
