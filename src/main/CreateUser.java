@@ -7,7 +7,7 @@ import java.sql.SQLException;
 
 import org.postgresql.util.PSQLException;
 
-import main.db.DBConnection;
+import main.connection.DBConnection;
 import main.util.CryptoPassword;
 
 public class CreateUser {
