@@ -19,7 +19,7 @@ A criação do banco está no arquivo CREATEDB.
 ## Compilação
 
 Para facilitar a importação de bibliotecas e a compilação dos arquivos em um único pacote, foi utilizado [Maven](https://maven.apache.org/).
-Para compilar gerando o pacote completo basta executar o comando abaixo na linha e comando.
+Para compilar gerando o pacote completo basta executar o comando abaixo na linha de comando.
 
 ```mvn assembly:assembly```
 
