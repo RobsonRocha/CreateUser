@@ -17,7 +17,7 @@ public class CreateUser {
 		if(args == null || args.length < 1){
 			System.out.println("Erro! Digite o seguinte comando: ");
 			System.out.println("java -cp CreateUserOLX_SAC-1.0.0-SNAPSHOT-jar-with-dependencies.jar main.CreateUser login. ");
-			System.out.println("Onde login é o nome do usuário. ");
+			System.out.println("Onde login Ã© o nome do usuÃ¡rio. ");
 			System.exit(1);
 		}
 		
@@ -27,8 +27,8 @@ public class CreateUser {
 	        System.exit(0);
 	    }
 		
-	    char passwordArray[] = console.readPassword("Digite a senha do usuário: ");
-	    boolean isAdmin = console.readLine("O usuário "+args[0]+" é administrador? (S/N) ").equalsIgnoreCase("S");
+	    char passwordArray[] = console.readPassword("Digite a senha do usuÃ¡rio: ");
+	    boolean isAdmin = console.readLine("O usuÃ¡rio "+args[0]+" Ã© administrador? (S/N) ").equalsIgnoreCase("S");
 	    
 		Connection con = DBConnection.getConnection();
 		
@@ -44,12 +44,12 @@ public class CreateUser {
 			
 			ps.executeUpdate();
 			
-			System.out.println(String.format("Usuário %s cadastrado com sucesso!!!", args[0]));
+			System.out.println(String.format("UsuÃ¡rio %s cadastrado com sucesso!!!", args[0]));
 			
 		}
 		catch(PSQLException e){
 			if(e.getMessage().contains("duplicate key value")){
-				System.out.println(String.format("O usuário %s já existe!!!", args[0]));
+				System.out.println(String.format("O usuÃ¡rio %s jÃ¡ existe!!!", args[0]));
 				e.printStackTrace();
 			}
 		}
