@@ -33,7 +33,7 @@ public class CreateUser {
 		Connection con = DBConnection.getConnection();
 		
 		StringBuilder sql = new StringBuilder();
-		sql.append("insert into olx_sac.usuario_login (login, senha, admin) values (?, ?, ?) ");
+		sql.append("insert into sac.usuario_login (login, senha, admin) values (?, ?, ?) ");
 		PreparedStatement ps = null;
 		try {
 			ps = con.prepareStatement(sql.toString());
@@ -55,7 +55,7 @@ public class CreateUser {
 		}
 		catch (SQLException e) {
 			System.out.println("Erro com o banco de dados.");
-			e.printStackTrace();
+			System.out.println(e.getMessage());
 		}
 		finally{
 			try {
